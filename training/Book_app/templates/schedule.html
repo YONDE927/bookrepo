@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>{{ book.name }}</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<h1>{{ book.name }}</h1>
+<br>
+<p>現在のページを入力してください</p>
+<form action="/schedule" method="post">
+  <input type="hidden" value={{book.id}} name="id" >
+  <input type="text" name="bookmark">
+  <input type="submit" value="更新">
+</form>
+<br>
+<p>一日に{{ book.pace }}読んでください</p>
+<br>
+</body>
+</html>
