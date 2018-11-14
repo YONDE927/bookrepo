@@ -35,14 +35,14 @@
   <tr>
     <td>{{loop.index}}</td>
     <td>{{book.name}}</td>
-    <td>{{book.pic}}</td>
+    <td><img src={{book.pic}}></td>
     <td>{{book.pages}}</td>
     <td>{{book.deadline}}</td>
     <td>{{book.bookmark}}</td>
     <td>{{book.pace}}</td>
     <td>
       <form action="/book" method="post">
-        <button type="submit" value={{loop.index}}>編集</button>
+        <button type="submit" value="{{loop.index}}" name="id">編集</button>
       </form>
     </td>
   </tr>
