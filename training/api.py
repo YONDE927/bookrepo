@@ -3,8 +3,8 @@
 import requests
 import json
 
-
-api="https://www.googleapis.com/books/v1/volumes?q={なっとくする量子力学}"
+bookname = "なっとくする量子力学"
+api="https://www.googleapis.com/books/v1/volumes?q={bookname}"
 r=requests.get(api)
 dic=json.loads(r.text)
 book=dic["items"][0]['volumeInfo']
