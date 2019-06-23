@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "name": "ホワイトカラーの業務改善",
+        "pic": "http://books.google.com/books/content?id=D-K2swEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "pages": 278,
+        "deadline": "2018-12-09",
+        "bookmark": "80",
+        "pace": 8.608695652173912
+    },
+    {
+        "id": 2,
+        "name": "絶対内定 2019 面接",
+        "pic": "http://books.google.com/books/content?id=KzRvtAEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "pages": 293,
+        "deadline": "2018-11-26",
+        "bookmark": 0,
+        "pace": 29.3
+    },
+    {
+        "id": 3,
+        "name": "ロジカル・シンキング",
+        "pic": "http://books.google.com/books/content?id=TnJ9-AdwNQgC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "pages": 227,
+        "deadline": "2018-12-16",
+        "bookmark": "61",
+        "pace": 5.724137931034483
+    },
+    {
+        "id": 4,
+        "name": "基礎コース統計学",
+        "pic": "http://books.google.com/books/content?id=jr-rYgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "pages": 247,
+        "deadline": "2018-12-24",
+        "bookmark": "100",
+        "pace": 5.068965517241379
+    },
+    {
+        "id": 5,
+        "name": "モンテ・クリスト伯(5)",
+        "pic": "http://books.google.com/books/content?id=cjtVQJ99zm4C&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+        "pages": 366,
+        "deadline": "2019-06-27",
+        "bookmark": 0,
+        "pace": 52.285714285714285
+    },
+    {
+        "id": 6,
+        "name": "鉄緑会東大英単語熟語鉄壁",
+        "pic": "http://books.google.com/books/content?id=aQxkQgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api",
+        "pages": 666,
+        "deadline": "2020-06-10",
+        "bookmark": 0,
+        "pace": 1.8707865168539326
+    }
+]

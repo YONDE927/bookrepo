@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>読書スケジュール</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h1>読書スケジュール</h1>
+  <h3>書籍・日数の登録</h3>
+  <form action="/save" method="post">
+    <p>
+    タイトルを入力してください
+    <input type="text" name="name">
+  </p>
+    <p>
+    読むのにかける日数
+    <input type="text" name="days">
+    日
+  </p>
+  <input type="submit" value="登録">
+</form>
+<br>
+<table border="1" align="middle">
+  <tr>
+    <th></th>
+    <th width="150" valign="middle">名前</th>
+    <th width="150" valign="middle">画像</th>
+    <th valign="middle">ページ数</th>
+    <th width="150" valign="middle">読み終える期限</th>
+    <th valign="middle">進捗ページ</th>
+    <th valign="middle">ペース</th>
+    <th></th>
+  </tr>
+  {% for book in books %}
+  <tr>
+    <td>{{loop.index}}</td>
+    <td>{{book.name}}</td>
+    <td><img src={{book.pic}}></td>
+    <td>{{book.pages}}</td>
+    <td>{{book.deadline}}</td>
+    <td>{{book.bookmark}}</td>
+    <td>{{book.pace}}</td>
+    <td>
+      <form action="/book" method="post">
+        <button type="submit" value="{{book.id}}" name="id">編集</button>
+      </form>
+      <br>
+      <form action="/delete" method="post">
+        <button type="submit" value="{{book.id}}" name="delid">削除{{book.id}}</button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+</body>
+</html>
